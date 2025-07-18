@@ -1,27 +1,53 @@
-
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: url('assets/background.png') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
-header, footer {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 1em;
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 1em;
+  gap: 1rem;
 }
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 .hero {
+  background: url('./assets/hero-bg.jpg') center center/cover no-repeat;
+  color: white;
   text-align: center;
-  margin-top: 100px;
+  padding: 6rem 2rem;
 }
-button {
-  padding: 0.5em 1em;
-  font-size: 1em;
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer .socials a {
+  color: #00aaff;
+  margin: 0 0.5rem;
 }
