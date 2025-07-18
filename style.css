@@ -1,93 +1,27 @@
-/* style.css */
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #fffbe6, #ffe6a7);
-  color: #333;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background: url('assets/background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
 }
-header {
-  background-color: #ffd369;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #222;
+header, footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1em;
 }
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.2rem;
-}
-nav a {
-  text-decoration: none;
-  color: #222;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-nav a:hover {
-  color: #ff914d;
+  justify-content: center;
+  gap: 1em;
 }
 .hero {
   text-align: center;
-  padding: 4rem 2rem;
-  background: #ffa07a;
-  color: #fff;
-  text-shadow: 1px 1px 5px #000;
+  margin-top: 100px;
 }
-.hero button {
-  margin-top: 1rem;
-  padding: 1rem 2rem;
-  background-color: #ff914d;
-  border: none;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: background 0.3s;
-}
-.hero button:hover {
-  background-color: #e26b26;
-}
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-#ranking ul {
-  padding-left: 1.5rem;
-}
-form input, form textarea {
-  width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-form button {
-  padding: 0.8rem 1.5rem;
-  background-color: #ffd369;
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
-  font-weight: bold;
-}
-footer {
-  background-color: #ffe6a7;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
-.socials a {
-  margin: 0 0.5rem;
-  color: #222;
-  text-decoration: none;
-}
-.socials a:hover {
-  text-decoration: underline;
+button {
+  padding: 0.5em 1em;
+  font-size: 1em;
 }
