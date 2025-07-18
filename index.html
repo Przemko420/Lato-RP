@@ -3,31 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LATO RP</title>
+  <title>LATO RP - Oficjalna Strona</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1>Witamy na LATO RP</h1>
-    <p>Stale rozwijający się serwer z unikalnym klimatem!</p>
+    <div class="logo">LATO RP</div>
+    <nav>
+      <ul>
+        <li><a href="#regulamin">Regulamin</a></li>
+        <li><a href="#discord">Discord</a></li>
+        <li><a href="#forum">Forum</a></li>
+        <li><a href="#rekrutacja">Rekrutacja</a></li>
+        <li><a href="#sklep">Sklep</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#">Regulamin</a></li>
-      <li><a href="#">Discord</a></li>
-      <li><a href="#">Forum</a></li>
-      <li><a href="#">Rekrutacja</a></li>
-      <li><a href="#">Sklep</a></li>
+
+  <section class="hero">
+    <h1>Witamy na LATO RP</h1>
+    <p>Realistyczny świat RP inspirowany klimatem GTA V i słonecznym latem. Dołącz do nas już dziś!</p>
+    <button onclick="joinDiscord()">Dołącz do Discorda</button>
+  </section>
+
+  <section class="lore">
+    <h2>Historia LATO RP</h2>
+    <p>LATO RP to serwer stworzony z myślą o graczach, którzy szukają letniego klimatu, ciekawego lore i aktywnej społeczności. Każda postać pisze swoją własną historię. Czy odważysz się stworzyć własną?</p>
+  </section>
+
+  <section id="ranking">
+    <h2>Ranking graczy</h2>
+    <ul id="ranking-list">
+      <li>1. Nowak - 124h</li>
+      <li>2. Kowalski - 110h</li>
+      <li>3. Wiśniewska - 98h</li>
     </ul>
-  </nav>
-  <main>
-    <section>
-      <h2>Dlaczego warto do nas dołączyć?</h2>
-      <p>Gracze cenią nas za klimat, pomocną administrację i zaangażowanie społeczności. Dołącz już dziś i przeżyj niezapomniane chwile w świecie RP!</p>
-    </section>
-  </main>
+  </section>
+
+  <section id="ogloszenia">
+    <h2>Ogłoszenia</h2>
+    <div id="cms-content">
+      <p>Nowe wydarzenie już w sobotę! Zgłoś się do udziału przez Discorda.</p>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Twoje imię" required />
+      <input type="email" name="email" placeholder="Twój email" required />
+      <textarea name="message" placeholder="Wiadomość" required></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+  </section>
+
   <footer>
-    <p>© 2025 LATO RP</p>
+    <div class="socials">
+      <a href="https://discord.gg/latorp" target="_blank">Discord</a>
+      <a href="#">YouTube</a>
+      <a href="#">TikTok</a>
+    </div>
+    <p>&copy; 2025 LATO RP. Wszelkie prawa zastrzeżone.</p>
   </footer>
 </body>
 </html>
